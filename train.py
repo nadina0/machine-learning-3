@@ -83,4 +83,4 @@ if __name__ == '__main__':
     all_samples = open_file(args.file)
     X, y = create_df(all_samples)
     model = train(X, y, args.model_type)
-    saved_model = save_model(args.model_type, args.output)
+    save_model(model, args.output)
